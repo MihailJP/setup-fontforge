@@ -1,6 +1,11 @@
 # setup-fontforge
 
-Setup Fontforge for GH-Actions
+Setup Fontforge for GH-Actions.
+This is intended for Python or legacy scripts; GUI features are not installed.
+
+> [!IMPORTANT]
+> Use **after** [Setup Python](https://github.com/actions/setup-python) action
+> and the Python module will be available.
 
 ## Usage
 

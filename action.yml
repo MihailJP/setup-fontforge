@@ -43,3 +43,6 @@ runs:
       shell: bash
       env:
         FFSOURCE: ${{ inputs.path }}
+branding:
+  icon: 'download'
+  color: 'white'
