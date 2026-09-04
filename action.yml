@@ -1,11 +1,8 @@
 name: 'Setup Fontforge'
 description: 'Build and install Fontforge'
 inputs:
-  repository:
-    description: 'Fontforge repository'
-    default: fontforge/fontforge
   ref:
-    description: 'Fontforge repository'
+    description: 'The branch, tag, or commit to checkout'
     default: master
   path:
     description: 'Destination path'
@@ -16,7 +13,7 @@ runs:
     - name: Checkout Fontforge
       uses: actions/checkout@v6
       with:
-        repository: ${{ inputs.repository }}
+        repository: fontforge/fontforge
         ref: ${{ inputs.ref }}
         path: ${{ inputs.path }}
     - name: Install dependencies
